@@ -36,8 +36,9 @@ int main () {
 	vn[4] = "Buch";
 	
 	for (int i=0; i<5; i++){
-		printf("%s",vnTemp[0]
+		
 		char vnTemp[0] = vn[i];
+		printf("%s",vnTemp[0]);
 		       /**
 		char nnTemp[] = nn[i];
 		
