@@ -37,8 +37,10 @@ int main () {
 	
 	for (int i=0; i<5; i++){
 		strcpy(ausgabe,vn[i]);
-		int vnS = strlen(vn);
-		int nnS = strlen(nn);
+		char* vnTemp[] = vn[i];
+		char* nnTemp[] = nn[i];
+		int vnS = strlen(vnTemp);
+		int nnS = strlen(nnTemp);
 		for(int j=0; j<(81-vnS-nnS); j++)
 			strcpy(ausgabe, "_");
 		strcat(ausgabe,nn[i]);
