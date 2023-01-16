@@ -14,12 +14,10 @@ int main () {
 	printf("\n *   ´´´´´´   *                ©S.Buch * ");
 	printf("\n *************************************** \n\n");
 	
-	//Füllung des Arrays
-	char* vn[5];
-	char* nn[5];
-	char* ausgabe[81];
+	char ausgabe[81];
 		
 	//Vornamen
+	char* vn[5];
 	vn[0] = "Laura";
 	vn[1] = "Janine";
 	vn[2] = "Marlon";
@@ -27,6 +25,7 @@ int main () {
 	vn[4] = "Sharon";
 	
 	//Nachnamen
+	char* nn[5];
 	vn[0] = "Weitmann";
 	vn[1] = "Reidenbach";
 	vn[2] = "Schmidt";
@@ -38,10 +37,11 @@ int main () {
 		strcpy(ausgabe,vn[i]);
 		int vnL = strlen(vn[i]);
 		int nnL = strlen(nn[i]);
-		for(int j=0; j<81-vnL-nnL; j++)
+		int space = 80-vnL-nnL;
+		for(int j=0; j<space; j++)
 			strcat(ausgabe,"_");		
 		strcat(ausgabe,nn[i]);		
-		printf("\n %s",ausgabe[i]);	
+		printf("\n%s",ausgabe);	
 	}
 	
 	
