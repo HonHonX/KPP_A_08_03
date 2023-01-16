@@ -22,29 +22,33 @@ int main () {
 	char* ausgabe[81];
 		
 	//Vornamen
-	vn[0]="Laura";
-	vn[1]="Janine";
-	vn[2]="Marlon";
-	vn[3]="Marius";
-	vn[4]="Sharon";
+	vn[0] = "Laura";
+	vn[1] = "Janine";
+	vn[2] = "Marlon";
+	vn[3] = "Marius";
+	vn[4] = "Sharon";
 	
 	//Nachnamen
-	vn[0]="Weitmann";
-	vn[1]="Reidenbach";
-	vn[2]="Schmidt";
-	vn[3]="Maurer";
-	vn[4]="Janine";
+	vn[0] = "Weitmann";
+	vn[1] = "Reidenbach";
+	vn[2] = "Schmidt";
+	vn[3] = "Maurer";
+	vn[4] = "Buch";
 	
 	for (int i=0; i<5; i++){
 		char vnTemp[] = vn[i];
 		char nnTemp[] = nn[i];
 		
 		strcpy(ausgabe,vn[i]);
+		
 		int vnS = strlen(vnTemp);
 		int nnS = strlen(nnTemp);
+		
 		for(int j=0; j<(81-vnS-nnS); j++)
 			strcpy(ausgabe, "_");
+		
 		strcat(ausgabe,nn[i]);
+		
 		printf("\n%s",ausgabe[i]);
 	}
 	
