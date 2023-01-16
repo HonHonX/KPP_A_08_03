@@ -38,7 +38,7 @@ int main () {
 		strcpy(ausgabe,vn[i]);
 		int vnL = strlen(vn[i]);
 		int nnL = strlen(nn[i]);
-		int space = 79-vnL-nnL;
+		int space = 80-vnL-nnL;
 		for(int j=0; j<space; j++) {
 			strcat(ausgabe,"_");
 		}		
