@@ -42,7 +42,7 @@ int main () {
 		for(int j=0; j<(81-vnS-nnS); j++)
 			strcpy(ausgabe, "_");
 		strcat(ausgabe,nn[i]);
-		printf("\n%s",ausgabe[i]
+		printf("\n%s",ausgabe[i]);
 	}
 	
 	
