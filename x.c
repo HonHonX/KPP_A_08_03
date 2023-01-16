@@ -1,8 +1,6 @@
 #include<stdio.h>
 #include<string.h>
 
-//Funktions Prototypen
-
 //Hauptprogramm
 int main () {
 	/*
@@ -50,5 +48,4 @@ int main () {
 	//Ende
 	printf("\n\n");
 	return 0;
-
-//Funktionen
+}
