@@ -37,17 +37,9 @@ int main () {
 	
 	for (int i=0; i<5; i++){
 		
-		char* vnTemp[0] = vn[i];
-		printf("%s",vnTemp[0]);
-		       /**
-		char nnTemp[] = nn[i];
-		
 		strcpy(ausgabe,vn[i]);
 		
-		int vnS = strlen(vnTemp);
-		int nnS = strlen(nnTemp);
-		
-		for(int j=0; j<(81-vnS-nnS); j++)
+		for(int j=0; j<(81-sizeof(vn[i])-sizeof(nn[i])); j++)
 			strcpy(ausgabe, "_");
 		
 		strcat(ausgabe,nn[i]);
