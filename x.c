@@ -45,7 +45,7 @@ int main () {
 		strcat(ausgabe,nn[i]);
 		
 		printf("\n%s",ausgabe[i]);
-		*/
+	
 	}
 	
 	
