@@ -53,22 +53,44 @@ int main () {
 }
 
 /**
- 22   char ausgabe[81];
- 23   printf("\n");
- 24   for(int i=0; i<5; i++){
- 25     strcpy(ausgabe, vorname[i]);
- 26     int laenge_eins = strlen(vorname[i]);
- 27     int laenge_zwei = strlen(nachname[i]);
- 28     int laenge = 79 - laenge_eins - laenge_zwei;
- 29     for(int n=0; n<laenge; n++){
- 30       strcat(ausgabe, " ");
- 31     }
- 32     strcat(ausgabe, nachname[i]);
- 33     printf("%s\n", ausgabe);
- 34     printf("\n");
- 35 
- 36   }
- 37   printf("\n\n");
- 38 
- 39 }
+#include <stdio.h>
+#include <string.h>
+
+void main(){
+
+  int zahl;
+  char* vorname[5];
+   vorname[0] = "Montag";
+   vorname[1] = "Dienstag";
+   vorname[2] = "Mittwoch";
+   vorname[3] = "Donnerstag";
+   vorname[4] = "Freitag";
+
+  char* nachname[5];
+   nachname[0] = "Montag";
+   nachname[1] = "Dienstag";
+   nachname[2] = "Mittwoch";
+   nachname[3] = "Donnerstag";
+   nachname[4] = "Freitag";
+
+
+  char ausgabe[81];
+  printf("\n");
+  for(int i=0; i<5; i++){
+    strcpy(ausgabe, vorname[i]);
+    int laenge_eins = strlen(vorname[i]);
+    int laenge_zwei = strlen(nachname[i]);
+    int laenge = 79 - laenge_eins - laenge_zwei;
+    for(int n=0; n<laenge; n++){
+      strcat(ausgabe, " ");
+    }
+    strcat(ausgabe, nachname[i]);
+    printf("%s\n", ausgabe);
+    printf("\n");
+
+  }
+  printf("\n\n");
+
+}
+
  */
