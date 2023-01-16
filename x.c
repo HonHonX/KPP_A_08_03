@@ -19,7 +19,7 @@ int main () {
 	//Füllung des Arrays
 	char* vn[5];
 	char* nn[5];
-	char* ausgabe[81];
+	char ausgabe[81] = "";
 		
 	//Vornamen
 	vn[0] = "Laura";
@@ -43,7 +43,7 @@ int main () {
 		for(int j=0; j<80-vnL-nnL; j++)
 			strcat(ausgabe, "_");		
 		strcat(ausgabe,nn[i]);		
-		printf("\n%s",ausgabe[i]);	
+		printf("\n %s",ausgabe[i]);	
 	}
 	
 	
