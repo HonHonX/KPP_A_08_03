@@ -17,7 +17,7 @@ int main () {
 	//Füllung des Arrays
 	char* vn[5];
 	char* nn[5];
-	char ausgabe[81] = "";
+	char* ausgabe[81] = "";
 		
 	//Vornamen
 	vn[0] = "Laura";
