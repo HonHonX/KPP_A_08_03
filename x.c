@@ -37,7 +37,7 @@ int main () {
 	
 	for (int i=0; i<5; i++){
 		
-		char vnTemp[0] = *vn[i];
+		char* vnTemp[0] = vn[i];
 		printf("%s",vnTemp[0]);
 		       /**
 		char nnTemp[] = nn[i];
