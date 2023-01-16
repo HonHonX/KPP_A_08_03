@@ -37,7 +37,9 @@ int main () {
 	
 	for (int i=0; i<5; i++){
 		strcpy(ausgabe,vn[i]);
-		for(int j=0; j<(81-strlen(vn)-strlen(nn)); j++)
+		int vnS = strlen(vn);
+		int nnS = strlen(nn);
+		for(int j=0; j<(81-vnS-nnS); j++)
 			strcpy(ausgabe, "_");
 		strcat(ausgabe,nn[i]);
 		printf("\n%s",ausgabe[i]
