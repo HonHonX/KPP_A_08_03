@@ -1,4 +1,4 @@
-NAME = x
+NAME = namen
 
 default: $(NAME)
 
