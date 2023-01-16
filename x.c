@@ -17,9 +17,9 @@ int main () {
 	printf("\n *************************************** \n\n");
 	
 	//Füllung des Arrays
-	char vn[5];
-	char nn[5];
-	char ausgabe[81];
+	char* vn[5];
+	char* nn[5];
+	char* ausgabe[81];
 		
 	//Vornamen
 	vn[0] = "Laura";
@@ -36,7 +36,9 @@ int main () {
 	vn[4] = "Buch";
 	
 	for (int i=0; i<5; i++){
-		char vnTemp[] = vn[i];
+		printf("%s",vnTemp[0]
+		char vnTemp[0] = vn[i];
+		       /**
 		char nnTemp[] = nn[i];
 		
 		strcpy(ausgabe,vn[i]);
@@ -50,6 +52,7 @@ int main () {
 		strcat(ausgabe,nn[i]);
 		
 		printf("\n%s",ausgabe[i]);
+		*/
 	}
 	
 	
