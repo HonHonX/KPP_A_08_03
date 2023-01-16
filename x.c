@@ -36,9 +36,10 @@ int main () {
 	vn[4]="Janine";
 	
 	for (int i=0; i<5; i++){
-		strcpy(ausgabe,vn[i]);
 		char vnTemp[] = vn[i];
 		char nnTemp[] = nn[i];
+		
+		strcpy(ausgabe,vn[i]);
 		int vnS = strlen(vnTemp);
 		int nnS = strlen(nnTemp);
 		for(int j=0; j<(81-vnS-nnS); j++)
