@@ -32,13 +32,13 @@ int main () {
 	vn[0]="Weitmann";
 	vn[1]="Reidenbach";
 	vn[2]="Schmidt";
-	vn[3]="Maurerr";
+	vn[3]="Maurer";
 	vn[4]="Janine";
 	
 	for (int i=0; i<5; i++){
 		strcpy(ausgabe,vn[i]);
-		char* vnTemp[] = vn[i];
-		char* nnTemp[] = nn[i];
+		char vnTemp[] = vn[i];
+		char nnTemp[] = nn[i];
 		int vnS = strlen(vnTemp);
 		int nnS = strlen(nnTemp);
 		for(int j=0; j<(81-vnS-nnS); j++)
