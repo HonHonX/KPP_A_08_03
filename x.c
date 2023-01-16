@@ -40,8 +40,8 @@ int main () {
 		strcpy(ausgabe,vn[i]);
 		int vnL = strlen(vn[i]);
 		int nnL = strlen(nn[i]);
-		for(int j=0; j<80-vnL-nnL; j++)
-			strcat(ausgabe, "_");		
+		for(int j=0; j<81-vnL-nnL; j++)
+			strcat(ausgabe,"_");		
 		strcat(ausgabe,nn[i]);		
 		printf("\n %s",ausgabe[i]);	
 	}
