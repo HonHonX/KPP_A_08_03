@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 
 //Funktions Prototypen
 
@@ -15,7 +16,33 @@ int main () {
 	printf("\n *   ´´´´´´   *                ©S.Buch * ");
 	printf("\n *************************************** \n\n");
 	
-	//
+	//Füllung des Arrays
+	char *vn[5];
+	char *nn[5];
+	char ausgabe[81];
+		
+	//Vornamen
+	vn[0]="Laura";
+	vn[1]="Janine";
+	vn[2]="Marlon";
+	vn[3]="Marius";
+	vn[4]="Sharon";
+	
+	//Nachnamen
+	vn[0]="Weitmann";
+	vn[1]="Reidenbach";
+	vn[2]="Schmidt";
+	vn[3]="Maurerr";
+	vn[4]="Janine";
+	
+	for (int i=0; i<5; i++){
+		strcpy(ausgabe,vn[i]);
+		for(int j=0; j<(80-strln(vn)-strln(nn)); j++)
+			strcpy(ausgabe, "_");
+		strcat(ausgabe,nn[i]);
+		printf("\n%s",ausgabe[i]
+	}
+	
 	
 	//Ende
 	printf("\n\n");
