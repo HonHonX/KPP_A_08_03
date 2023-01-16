@@ -40,7 +40,7 @@ int main () {
 		int nnL = strlen(nn[i]);
 		int space = 79-vnL-nnL;
 		for(int j=0; j<space; j++) {
-			strcat(ausgabe,"_")
+			strcat(ausgabe,"_");
 		}		
 		strcat(ausgabe,nn[i]);		
 		printf("\n%s",ausgabe);	
