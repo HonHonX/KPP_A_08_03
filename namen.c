@@ -34,7 +34,6 @@ int main () {
 	char ausgabe[81];
 	
 	for (int i=0; i<5; i++){
-		
 		strcpy(ausgabe,vn[i]);
 		int vnL = strlen(vn[i]);
 		int nnL = strlen(nn[i]);
